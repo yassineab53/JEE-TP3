@@ -7,6 +7,7 @@
 <body>
 <h1><%= "Hello World!" %></h1>
 <br/>
-<a href="formulaire.html">Formulaire</a>
+<a href="formulaire.html">Formulaire</a><br>
+<a href="ServletTraitement?prenom=Nabil&nom=Alami">lien</a>
 </body>
 </html>

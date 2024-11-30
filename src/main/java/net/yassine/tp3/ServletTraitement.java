@@ -34,7 +34,7 @@ public class ServletTraitement extends HttpServlet {
                 "        </style>");
 
 
-        out.println("<h1>" + "Bonjour g" + nom + " " + prenom + "</h1>");
+        out.println("<h1>" + "Bonjour " + nom + " " + prenom + "</h1>");
         out.println("</body></html>");
 
         out.close();
