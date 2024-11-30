@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("ServletTraitement")
+@WebServlet("/ServletTraitement")
 public class ServletTraitement extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nom = request.getParameter("nom");
@@ -33,7 +33,7 @@ public class ServletTraitement extends HttpServlet {
                 "        </style>");
 
 
-        out.println("<h1>" + "Bonjour" + nom + prenom + "</h1>");
+        out.println("<h1>" + "Bonjour g" + nom + " " + prenom + "</h1>");
         out.println("</body></html>");
 
         out.close();
