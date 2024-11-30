@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 
 @WebServlet("/ServletTraitement")
 public class ServletTraitement extends HttpServlet {
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nom = request.getParameter("nom");
         String prenom = request.getParameter("prenom");
