@@ -17,6 +17,7 @@ public class ServletTraitement extends HttpServlet {
         String nom = request.getParameter("nom");
         String prenom = request.getParameter("prenom");
         String sex = request.getParameter("sex");
+        String fonction = request.getParameter("fonction");
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -35,7 +36,7 @@ public class ServletTraitement extends HttpServlet {
                 "        </style>");
 
 
-        out.println("<h1>" + "Bonjour "+ sex + " " + nom + " " + prenom + "</h1>");
+        out.println("<h1>" + "Bonjour "+ sex + " " + nom + " " + prenom + " : " + fonction + "</h1>");
         out.println("</body></html>");
 
         out.close();
