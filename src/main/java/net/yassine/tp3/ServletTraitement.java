@@ -19,6 +19,9 @@ public class ServletTraitement extends HttpServlet {
         String sex = request.getParameter("sex");
         String fonction = request.getParameter("fonction");
 
+        //question 11
+        String[] arrHobbies = request.getParameterValues("hob");
+
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<html>");
@@ -37,6 +40,12 @@ public class ServletTraitement extends HttpServlet {
 
 
         out.println("<h1>" + "Bonjour "+ sex + " " + nom + " " + prenom + " : " + fonction + "</h1>");
+        out.println("<h1>" + "Vos loisirs : ");
+        for(String s: arrHobbies) {
+            out.println("<li>" + s + "</li>");
+        }
+        out.println("</h1>");
+
         out.println("</body></html>");
 
         out.close();
